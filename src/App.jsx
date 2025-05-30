@@ -54,7 +54,7 @@ function App() {
 
   // Initialize Socket.IO connection
   useEffect(() => {
-    socketRef.current = io('http://localhost:3000'); // Update URL if needed
+    socketRef.current = io('https://chessbacker.onrender.com'); // Update URL if needed
     const socket = socketRef.current;
 
     socket.on('gameCreated', ({ gameId, color }) => {
